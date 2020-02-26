@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descans 4</title>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+       height: 100%;
+	margin: 20px 0 0 0;
+        }
+        .centre-fit {
+            max-width: 100%;
+            max-height: 80vh;
+            margin: auto;
+        }
+    </style>
+<script type="text/javascript">
+var random_images_array = ['beister.png', 'benyn.png', 'bord.png', 'cath.png', 'cota.png', 'daras.png', 'davas.png', 'den.png', 'gwedhen.png', 'gwely.png', 'kenter.png', 'keus.png', 'maw.png', 'melwhejen.png', 'morthol.png', 'mowes.png', 'podik.png', 'pel.png', 'tan.png', 'tesen.png', 'chei.png', 'bolla.png', 'kist.png', 'collell.png', 'kyttrin.png'];
+    
+function getRandomImage(imgAr, path) {
+    path = path || '../img/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img class="centre-fit" src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+
+</script>
+</head>
+<body>
+    <div class="imgbox">
+<script type="text/javascript">getRandomImage(random_images_array, '../img/')</script> <!--put the path here too-->
+    </div>
+</body>
+</html>
