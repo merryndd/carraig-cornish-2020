@@ -1,0 +1,38 @@
+body {
+  background-color: hsla(50, 68%, 80%, 1);
+}
+
+.hello {
+  overflow: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: auto;
+  height: fit-content;
+  width: fit-content;
+  border: 2px solid hsla(50, 68%, 50%, 1);
+  padding: 5px;
+  background-color: hsla(50, 68%, 70%, 1);
+}
+
+p {
+  font-size: 6vw;
+  font-family: 'Ubuntu', serif;
+  color: hsla(50, 68%, 40%, 1);
+}
+
+p, .imgbox {
+    width: fit-content;
+  margin: 5px auto;
+  border: 2px solid hsla(50, 68%, 50%, 1);
+  padding: 2px;
+  background-color: hsla(50, 68%, 80%, 1);
+}
+
+span {
+  font-weight: bold;
+  color: hsla(50, 68%, 30%, 1);
+}
+
+img {
+    max-height: 60vh;
+}

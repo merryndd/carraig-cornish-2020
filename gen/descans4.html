@@ -2,23 +2,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Descans 4</title>
-<style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        .imgbox {
-            display: grid;
-       height: 100%;
-	margin: 20px 0 0 0;
-        }
-        .centre-fit {
-            max-width: 100%;
-            max-height: 80vh;
-            margin: auto;
-        }
-    </style>
+    <title>Descans 4</title>
+    <link rel="stylesheet" href="style.css">
 <script type="text/javascript">
   var random_images_array = ['en.png', 'war.png', 'dherag.png', 'a-dhelergh.png', 'reb.png', 'en-dadn.png'];
     
@@ -32,9 +17,11 @@ function getRandomImage(imgAr, path) {
 
 </script>
 </head>
-<body>
+  <body>
+    <div class="hello">
     <div class="imgbox">
 <script type="text/javascript">getRandomImage(random_images_array, '../img/')</script> <!--put the path here too-->
+    </div>
     </div>
 </body>
 </html>

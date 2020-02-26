@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Descans 5</title>
+    <script type="text/javascript">
+      window.onload=function(){
+
+      var adjectives = ["berr", "cott", "hir", "coth", "nowedh", "yonk", "skianjek", "sogh", "lebm", "es", "medhel", "calish", "broas", "bian", "meur", "wheg", "trenk", "wherow", "sellys", "gwydn", "du", "hujes", "munys", "scav", "poos", "tanow", "pals", "crev", "gwadn", "da", "drog", "glan", "plos", "hager", "teg", "idn", "ledan", "lowen", "truedhek", "spladn", "tewl", "fur", "gocky", "ughel", "isel", "gwir", "anwir", "tobm", "yeyn"];
+      var getRandomAdjective = function(){return adjectives[Math.floor(Math.random() * adjectives.length)];};
+      document.getElementById("showadjective").innerHTML = getRandomAdjective();
+
+      };
+
+      var random_images_array = ['beister.png', 'benyn.png', 'bord.png', 'cath.png', 'cota.png', 'daras.png', 'davas.png', 'den.png', 'gwedhen.png', 'gwely.png', 'kenter.png', 'keus.png', 'maw.png', 'melwhejen.png', 'morthol.png', 'mowes.png', 'podik.png', 'pel.png', 'tan.png', 'tesen.png', 'chei.png', 'bolla.png', 'kist.png', 'collell.png', 'kyttrin.png', 'coos.png', 'kei.png', 'pons.png', 'gwas.png', 'cowl.png'];
+    
+function getRandomImage(imgAr, path) {
+    path = path || '../img/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img class="centre-fit" src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+    </script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="hello">
+      <div class="imgbox">
+<script type="text/javascript">getRandomImage(random_images_array, '../img/')</script> <!--put the path here too-->
+    </div>
+      <p>Adjective: <span id="showadjective"/></p>
+    </div>
+  </body>
+</html>
