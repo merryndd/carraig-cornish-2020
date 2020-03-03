@@ -6,3 +6,4 @@
   [naming objects
   revision](https://merryndd.github.io/carraig-cornish-2020/gen/descans4-1.html), [possession with definite article](https://merryndd.github.io/carraig-cornish-2020/gen/descans4-2.html)
 * Descans 5: adjectives ([Cornish](https://merryndd.github.io/carraig-cornish-2020/gen/descans5-cor.html)/[English](https://merryndd.github.io/carraig-cornish-2020/gen/descans5-eng.html))
+* Descans 7: [sentences with *boas*](https://merryndd.github.io/carraig-cornish-2020/gen/descans7.html)

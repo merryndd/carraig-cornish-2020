@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Descans 7</title>
+    <script type="text/javascript">
+      window.onload=function(){
+
+      var adjectives = ["short", "brief", "long", "tall", "old", "new", "young", "intelligent", "stupid", "blunt", "sharp", "easy", "soft", "hard", "big", "small", "great", "sweet", "bitter", "sour", "salty", "witty", "white", "black", "huge", "tiny", "light", "heavy", "scarce", "thin", "plentiful", "strong", "weak", "good", "bad", "clean", "dirty", "ugly", "horrible", "pretty", "narrow", "wide", "happy", "sad", "bright", "brilliant", "dark", "sensible", "silly", "high", "low", "true", "untrue", "hot", "cold", "other", "comfortable", "bottom", "first", "open"];
+      var getRandomAdjective = function(){return adjectives[Math.floor(Math.random() * adjectives.length)];};
+      document.getElementById("showadjective").innerHTML = getRandomAdjective();
+
+      var sentences = ["ordinary", "question", "complement first", "negative"];
+      var getRandomSentence = function(){return sentences[Math.floor(Math.random() * sentences.length)];};
+      document.getElementById("showsentence").innerHTML = getRandomSentence();
+
+      var things = ["me", "you (singular)", "him", "her", "it", "us", "you (plural)", "them", "Jowan", "Tamsin", "the box", "the dog", "the boy", "the tree"];
+      var getRandomThing = function(){return things[Math.floor(Math.random() * things.length)];};
+      document.getElementById("showthing").innerHTML = getRandomThing();
+
+      };
+    </script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="hello">
+      <p>Who/what: <span id="showthing"/></p>
+      <p>Adjective: <span id="showadjective"/></p>
+      <p>Sentence type: <span id="showsentence"/></p>
+    </div>
+  </body>
+</html>
